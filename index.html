@@ -8,31 +8,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <select name="video" id="video">
-        <option selected value="">Choose Sessons</option>
-        <option value="Session_1">Session 1</option>
-        <option value="Session_2">Session 2</option>
-        <option value="Session_3">Session 3</option>
-    </select>    
-    <button id="btn">Click</button>
-    <div class="video_container" id="video_container"></div>
-    <script src="main.js"></script>
-    <script>
-       var button=document.getElementById("btn")
-var video_container=document.getElementById("video_container")
-button.addEventListener("click",display)
-
-
-function display()
-{
-    var session=document.getElementById("video")
-    var val=session.value
-    switch(val){
-    case 'Session_1':
-        console.log("entered");
-        video_container.innerHTML=`<iframe width="560" height="315" src="https://www.youtube.com/embed/LpVjT-TA1R0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-}  
-}
-      </script>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LpVjT-TA1R0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </body>
 </html>
